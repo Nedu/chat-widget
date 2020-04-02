@@ -1,16 +1,7 @@
-import React, { ReactElement, ReactChild, ReactNode } from 'react'
+import React, { ReactElement } from 'react'
 import App from './App'
-import {
-  render as rtlRender,
-  screen,
-  RenderResult,
-  RenderOptions,
-} from '@testing-library/react'
-import {
-  I18nextProvider,
-  I18nextProviderProps,
-  TranslationProps,
-} from 'react-i18next'
+import { render as rtlRender, screen } from '@testing-library/react'
+import { I18nextProvider, TranslationProps } from 'react-i18next'
 
 import i18n from './shared/il8n'
 
