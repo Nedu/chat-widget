@@ -45,6 +45,88 @@ exports[`Storyshots Button Text 1`] = `
 </button>
 `;
 
+exports[`Storyshots Card Card List 1`] = `
+<div
+  className="main-container"
+>
+  <div
+    className="scrolling-div"
+  >
+    <div
+      className="card-container"
+    >
+      <p
+        className="truncate-overflow"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+    <div
+      className="card-container"
+    >
+      <p
+        className="truncate-overflow"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card ChatWidgetCard 1`] = `
+<div
+  className="card-container"
+>
+  <p
+    className="truncate-overflow"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Footer ChatWidgetFooter 1`] = `
+<div
+  className="footer-container"
+>
+  <div
+    className="form-container"
+  >
+    <form
+      className="form-elem"
+      onSubmit={[Function]}
+    >
+      <input
+        className="form-input form-control"
+        name="chatMessage"
+        onChange={[Function]}
+        placeholder="Enter message"
+        type="text"
+        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      />
+      <button
+        aria-label={null}
+        className="btn btn-info"
+        onClick={[Function]}
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header ChatWidgetHeader 1`] = `
+<div
+  className="header"
+>
+  <h1>
+    FieldChat
+  </h1>
+</div>
+`;
+
 exports[`Storyshots Welcome FieldChat 1`] = `
 Array [
   <h1>
