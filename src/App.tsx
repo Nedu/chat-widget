@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import ChatWidget from './features/ChatWidget/views/ChatWidget'
+import ChatWidget from './features/ChatWidget/containers/ChatWidget'
 
 const App: React.FC = () => (
   <Router>

@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { IMessage } from '../containers/ChatWidget'
+import { Message } from '../containers/ChatWidget'
 import './styles.scss'
 
 interface Props {
-  message: IMessage
+  message: Message
 }
 
 const ChatWidgetCard: React.FC<Props> = ({ message }: Props) => {

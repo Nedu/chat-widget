@@ -30,6 +30,12 @@ html {
   background: white;
 }
 
+.chat-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .header {
   border-bottom: 1px solid black;
   padding: 0.3em;
@@ -51,4 +57,21 @@ html {
   border: 1px solid black;
   margin: 1em;
   padding: 1em;
+}
+
+.footer-container {
+  border-top: 1px solid black;
+}
+
+.form-container {
+  padding: 1em;
+}
+
+.form-elem {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-input {
+  margin-right: 1em;
 }

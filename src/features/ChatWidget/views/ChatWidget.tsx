@@ -1,15 +1,32 @@
-import React from 'react'
-import { Jumbotron } from 'reactstrap'
-import { useTranslation } from 'react-i18next'
+import React, { FormEvent, ChangeEvent } from 'react'
 
-const ChatWidget: React.FC = () => {
-  const { t } = useTranslation()
+import { Message } from '../containers/ChatWidget'
+import ChatWidgetHeader from './ChatWidgetHeader'
+import ChatWidgetMain from './ChatWidgetMain'
+import ChatWidgetFooter from './ChatWidgetFooter'
 
+interface Props {
+  message: string
+  messages: Message[]
+  handleSubmit: (e: FormEvent<HTMLFormElement>) => void
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void
+}
+
+const ChatWidget: React.FC<Props> = ({
+  message,
+  messages,
+  handleSubmit,
+  handleChange,
+}: Props) => {
   return (
-    <div>
-      <Jumbotron>
-        <h1>{t('features.chatwidget.header')}</h1>
-      </Jumbotron>
+    <div className="chat-container">
+      <ChatWidgetHeader />
+      <ChatWidgetMain messages={messages} />
+      <ChatWidgetFooter
+        message={message}
+        handleSubmit={handleSubmit}
+        handleChange={handleChange}
+      />
     </div>
   )
 }
