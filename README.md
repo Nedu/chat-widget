@@ -2,7 +2,7 @@
 
 A simple chat widget
 
-![FieldChat Wireframe](../chat-widget/public/FieldChat.png)
+![FieldChat Wireframe](./public/FieldChat.png?raw=true)
 
 ## Getting Started
 
